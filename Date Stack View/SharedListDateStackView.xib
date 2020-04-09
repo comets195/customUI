@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SharedListDateStackView" customModule="cashfeed" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollView" destination="ENC-sf-Q1F" id="skM-fU-pQ6"/>
+                <outlet property="stackView" destination="m0E-IO-aff" id="AL3-35-Qjl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENC-sf-Q1F">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0E-IO-aff">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="m0E-IO-aff" firstAttribute="height" secondItem="6Vd-WD-M4l" secondAttribute="height" id="eDb-9S-jS6"/>
+                        <constraint firstItem="YA2-X6-AEf" firstAttribute="top" secondItem="m0E-IO-aff" secondAttribute="top" id="hnv-mK-sqM"/>
+                        <constraint firstItem="m0E-IO-aff" firstAttribute="leading" secondItem="YA2-X6-AEf" secondAttribute="leading" id="lhW-Kd-lRW"/>
+                        <constraint firstAttribute="height" constant="50" id="mV4-Pe-Paf"/>
+                        <constraint firstItem="m0E-IO-aff" firstAttribute="trailing" secondItem="YA2-X6-AEf" secondAttribute="trailing" id="miQ-hN-HHs"/>
+                        <constraint firstItem="m0E-IO-aff" firstAttribute="width" secondItem="6Vd-WD-M4l" secondAttribute="width" priority="250" id="n84-ty-hd6"/>
+                        <constraint firstItem="m0E-IO-aff" firstAttribute="bottom" secondItem="YA2-X6-AEf" secondAttribute="bottom" id="uaq-ZR-sFI"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="YA2-X6-AEf"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="6Vd-WD-M4l"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ENC-sf-Q1F" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Prd-3q-tGy"/>
+                <constraint firstItem="ENC-sf-Q1F" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ehB-w3-fTO"/>
+                <constraint firstAttribute="trailing" secondItem="ENC-sf-Q1F" secondAttribute="trailing" id="rw3-Ay-ARj"/>
+                <constraint firstItem="ENC-sf-Q1F" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="v56-GY-jJ7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="114"/>
+        </view>
+    </objects>
+</document>
